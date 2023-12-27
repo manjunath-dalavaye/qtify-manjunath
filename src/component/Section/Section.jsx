@@ -10,7 +10,7 @@ import { CircularProgress } from "@mui/material";
 function Section({ title, data, type}) {
     // const [filters, setFilters] = useState([{ key: "all", label: "All"}])
     // const [selectedFilterIndex, setSelectedFilterIndex] = useState(0);
-    const [carouselToggle, setCarouselToggle] = useState(true);
+    const [carouselToggle, setCarouselToggle] = useState(false);
 
     const handleToggle = () => {
         setCarouselToggle((prevState) => !prevState);
