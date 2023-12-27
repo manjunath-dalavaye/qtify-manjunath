@@ -1,18 +1,32 @@
+// import React from "react";
+// import { withStyles } from "@material-ui/core/styles";
+// import Tooltip from "@material-ui/core/Tooltip";
+// import Chip from "@material-ui/core/Chip";
+// import { Link } from "react-router-dom";
+// import style from "./Card.module.css";
+
+// const CustomTooltip = withStyles((theme) => ({
+//   tooltip: {
+//     backgroundColor: "black" , // Change to your desired tooltip background color
+//     color: "#34C94B",
+//     fontSize: theme.typography.pxToRem(13),
+//     border: "1px solid #dadde9",
+//   },
+// }))(Tooltip);
+
 import React from "react";
-import { withStyles } from "@material-ui/core/styles";
-import Tooltip from "@material-ui/core/Tooltip";
-import Chip from "@material-ui/core/Chip";
+import Tooltip from "@mui/material/Tooltip";
+import Chip from "@mui/material/Chip";
 import { Link } from "react-router-dom";
+import { styled } from "@mui/system";
 import style from "./Card.module.css";
 
-const CustomTooltip = withStyles((theme) => ({
-  tooltip: {
-    backgroundColor: "black" , // Change to your desired tooltip background color
-    color: "#34C94B",
-    fontSize: theme.typography.pxToRem(13),
-    border: "1px solid #dadde9",
-  },
-}))(Tooltip);
+const CustomTooltip = styled(Tooltip)({
+  backgroundColor: "black",
+  color: "#34C94B",
+  fontSize: (theme) => theme.typography.pxToRem(13),
+  border: "1px solid #dadde9",
+});
 
 function Card({ data, type }) {
   const getCard = (type) => {
