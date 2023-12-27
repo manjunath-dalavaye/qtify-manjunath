@@ -4,3 +4,23 @@
     flex-direction: column;
     gap: 32px;
 }
+/* HomePage.module.css */
+body {
+    overflow: hidden;
+  }
+  
+  .wrapper {
+    overflow-y: scroll; /* Enable vertical scrolling */
+    height: 100vh; /* Set a fixed height for the wrapper */
+  }
+  
+  /* Hide the scrollbar for WebKit browsers */
+  .wrapper::-webkit-scrollbar {
+    width: 0.1em;
+  }
+  
+  .wrapper::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  
+  

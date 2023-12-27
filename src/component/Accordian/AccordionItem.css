@@ -1,0 +1,26 @@
+/* AccordionItem.css */
+.accordion-item {
+    border: 1px solid #000; /* Black border */
+    margin-bottom: 10px;
+    overflow: hidden;
+    max-height: 60px; /* Set a fixed height */
+    transition: max-height 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .accordion-heading {
+    background-color: #34C94B; /* Green background */
+    color: #fff; /* White text color */
+    padding: 10px;
+    cursor: pointer;
+    text-align: center; /* Center the text */
+  }
+  
+  .accordion-heading:hover {
+    background-color: #30a547; /* Darker green on hover */
+  }
+  
+  .accordion-content {
+    padding: 40px;
+    overflow: hidden;
+  }
+  

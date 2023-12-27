@@ -1,0 +1,15 @@
+/* AccordionParent.css */
+.accordion-parent {
+    max-width: 400px; /* Adjust as needed */
+    margin: 0 auto; /* Centering the accordion */
+    padding: 20px;
+  }
+  
+  .accordion-child {
+    margin-top: 20px;
+  }
+  
+  .faq-heading {
+    text-align: center; /* Center the FAQ heading */
+  }
+  

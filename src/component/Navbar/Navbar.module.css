@@ -1,3 +1,4 @@
+/* Navbar.module.css */
 .navbar {
   background-color: var(--color-primary);
   width: 100vw;
@@ -6,4 +7,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px 32px;
+
+  overflow: hidden; /* Hide the scrollbar in the navbar */
 }
